@@ -11,7 +11,7 @@ function App() {
   let calcBmi = (event)=> {
     event.preventDefault()
 
-    if(weight<=0 || height<=~0){
+    if(weight<=0 || height<=0){
       alert("Please enter a valid weight and height...!")
     }else{
       let bmi = (weight / (height * height) * 703)
@@ -53,9 +53,6 @@ function App() {
         <div className='center'>
           <h3>Your BMI is: {bmi}</h3>
           <p>{message}</p>
-        </div>
-        <div className='img-container'>
-          <img src='{imgSrc}' alt = ''></img>
         </div>
       </div>
     </div>
