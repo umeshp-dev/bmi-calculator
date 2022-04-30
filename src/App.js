@@ -11,7 +11,7 @@ function App() {
   let calcBmi = (event)=> {
     event.preventDefault()
 
-    if(weight===0 || height===0){
+    if(weight<=0 || height<=~0){
       alert("Please enter a valid weight and height...!")
     }else{
       let bmi = (weight / (height * height) * 703)
